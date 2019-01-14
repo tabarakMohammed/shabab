@@ -1,0 +1,82 @@
+
+<ion-header>
+  
+    <ion-navbar>
+  
+      <ion-title >
+         <ion-grid>
+           <ion-row>
+             <ion-col>
+              </ion-col>
+
+             <ion-col>
+               <ion-icon  style="padding-left: 90%" name="people">
+              </ion-icon></ion-col>
+             
+           </ion-row>
+         </ion-grid>
+            
+          
+      </ion-title>
+  
+    </ion-navbar>
+  </ion-header>
+
+
+
+<ion-content padding>
+
+  
+
+
+
+    <div style="text-align:center"  >
+        <img src="{{this.x[0][1]['imageUrl']}}" #myImage
+        width="auto" height="200" (click)="presentImage(myImage)" />
+
+   </div>
+
+
+  <ion-card dir="rtl" class="kufi" padding>
+   
+      <ion-list>
+        <ion-item class="underLine" style=" width: 90%;"> الحالة رقم: {{this.x[0][1]['numberOfCAse']}}  </ion-item> 
+        <ion-row>
+         <ion-col>
+        <ion-item class="underLine"> المبلغ المطلوب:</ion-item> 
+         </ion-col>
+         <ion-col>
+         <ion-item class="underLine"> {{this.x[0][1]['price']}}$ </ion-item>
+         </ion-col>
+        </ion-row>
+        <ion-item  class="underLine"  style=" width: 40%;"> التفاصيل: </ion-item>
+      </ion-list>
+  
+    <ion-card-content>
+     <p>{{this.x[0][1]['letter']}}</p>
+    </ion-card-content>
+  
+  </ion-card>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>

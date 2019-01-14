@@ -1,0 +1,59 @@
+<ion-header>
+  
+    <ion-navbar>
+  
+      <ion-title class="kufi">
+         <ion-grid>
+           <ion-row>
+              <ion-col>
+                <ion-icon name="log-out" (click)="logOut()"></ion-icon>
+              </ion-col>
+             <ion-col>
+                <div style="text-align: center"> شباب الخير  </div>        
+             </ion-col>
+              <ion-col>
+                <ion-icon style="padding-left: 80%" name="people"></ion-icon>
+            </ion-col>
+             
+           </ion-row>
+         </ion-grid>
+            
+          
+      </ion-title>
+  
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+  
+
+
+  <ion-list dir="rtl"  *ngFor='let gift of this.myObject' >
+      <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/2.png">
+      
+      </ion-avatar>
+      
+    
+      <h2 class="kufii"> الحالة رقم : {{gift[1]['numberOfCAse']}}  </h2>
+
+      <p >{{gift[1]['letter']}}</p>
+    
+      <button ion-button color="dark" clear 
+       icon-only item-end (click)="det(gift[0])">
+      <ion-icon   name='ios-arrow-back-outline'></ion-icon>
+      </button>
+<br>
+      <p dir="ltr">$ {{gift[1]['price']}}</p>
+
+    </ion-item>
+
+    </ion-card>
+
+  </ion-list>
+ 
+  
+    
+</ion-content>

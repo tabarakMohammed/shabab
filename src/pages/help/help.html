@@ -1,0 +1,77 @@
+<!--
+  Generated template for the CasePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  
+    <ion-navbar class="kufi">
+    
+      <ion-title >
+          <ion-grid>
+              <ion-row>
+        <ion-col> 
+          <ion-icon  name='ios-arrow-back-outline' (click)="backTOHome()"></ion-icon>
+         </ion-col>
+        <ion-col>
+            <div  style="text-align: center"> طلب المساعدة </div>        
+         </ion-col>
+         <ion-col>
+           <ion-icon style="padding-left: 80%; font-size: 30px;" name="people"></ion-icon>
+          </ion-col>
+         
+       </ion-row>
+     </ion-grid>
+        </ion-title>
+  
+         
+          
+      
+  
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding class="kufii">
+  <p style="text-align: center;"> اذا كنت بحاجة الى مساعدة يمكنك التواصل معنا</p>
+  <br>
+      <ion-list dir="rtl">
+          <ion-item style="font-size:13px">
+            <ion-label >الأسم</ion-label>
+            <ion-input type="text"  [(ngModel)]='upinfo.name'></ion-input>
+          </ion-item>
+        
+          
+          <ion-item style="font-size:13px">
+            <ion-label   >رقم الهاتف</ion-label>
+            <ion-input type="number"   [(ngModel)]='upinfo.phone'   ></ion-input>
+          </ion-item>
+      
+          <ion-item style="font-size:13px">
+            <ion-label >المحافظة</ion-label>
+            <ion-input type="text"    [(ngModel)]='upinfo.province'  ></ion-input>
+          </ion-item>
+
+          <ion-item style="font-size:13px">
+              <ion-label >نوع المساعدة</ion-label>
+              <ion-input type="text"   [(ngModel)]='upinfo.HelpType'   ></ion-input>
+            </ion-item>
+          
+            <ion-item style="font-size:13px">
+              <ion-label >التفاصيل</ion-label>
+              <ion-textarea rows="4" type="text" [(ngModel)]='upinfo.letter'    ></ion-textarea>
+  
+            </ion-item>
+  
+           
+      
+      </ion-list>
+  
+   
+    
+    <br>
+      <div>
+          <button ion-button  full  color="Rr" (click)="addInfo()">أرسال</button>
+          </div>
+  </ion-content>
+  

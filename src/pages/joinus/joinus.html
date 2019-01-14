@@ -1,0 +1,124 @@
+<ion-header>
+  
+  <ion-navbar class="kufi">
+  
+    <ion-title >
+        <ion-grid>
+            <ion-row>
+      <ion-col> 
+        <ion-icon  name='ios-arrow-back-outline' (click)="backTOHome()"></ion-icon>
+       </ion-col>
+      <ion-col>
+             
+       </ion-col>
+       <ion-col>
+         <ion-icon style="padding-left: 80%; font-size: 30px;" name="people"></ion-icon>
+        </ion-col>
+       
+     </ion-row>
+   </ion-grid>
+      </ion-title>
+
+       
+        
+    
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding dir="rtl" class="kufi">
+
+
+
+  <ion-card  color="Gd" style="padding:0px;" >
+    
+
+      <ion-row >
+      <ion-col  col-4 style="padding:0px;">
+          
+        <ion-icon style="color:#4ec6ae; zoom: 6;"  name="people"> </ion-icon>
+      </ion-col>
+
+      <ion-col>
+
+        <p class="fo" (click)="openUrl('http://goo.gl/forms/BWpxxkXHbH')" >    أستمارة الأنضمام  </p>
+
+    </ion-col>
+      </ion-row>
+  </ion-card>
+
+  <ion-card color="Bd" style="padding:0px;" >
+    
+     
+      <ion-row>
+      <ion-col col-4 style="padding:0px;">
+        <ion-icon style=" color:#a76ebf; zoom: 6;"  name="paper">
+        </ion-icon>
+      </ion-col>
+
+      <ion-col>
+       <p class="fo" (click)="openUrl('https://goo.gl/forms/BWL3CN7goYBCcbah2')">       أستمارة مرضى السكر  </p>
+      </ion-col>
+      </ion-row>
+
+  </ion-card>
+
+
+
+
+
+  <ion-card  style="padding:0px;">
+    
+   
+     
+      <ion-row>
+      <ion-col col-3 style="padding:0px;">
+        <img  height="80" src="assets/imgs/Facebook.png">
+      </ion-col>
+
+      <ion-col >
+       <p class="fo" style="color:#4267b2"
+       (click)="openUrl('https://www.facebook.com/good.shabab')" >  صفحتنا على الفيسبوك  </p>
+      </ion-col>
+
+
+      </ion-row>
+
+    
+  </ion-card>
+
+  <ion-card style="padding:0px;">
+    
+     
+
+      <ion-row>
+      <ion-col col-3 style="padding:0px;">
+          <img  height="80" src="assets/imgs/t.png">
+      </ion-col>
+
+      <ion-col>
+       <p class="fo" style="color:#1da1f3;"
+       (click)="openUrl('https://twitter.com/goodshabab?lang=ar')">      صفحتنا على تويتر  </p>
+      </ion-col>
+      </ion-row>
+
+  </ion-card>
+
+
+  <ion-card  >
+    
+     
+      <ion-row>
+      <ion-col col-3 style="padding:4px;" >
+          <img   height="70" src="assets/imgs/insta.png">
+      </ion-col>
+
+      <ion-col>
+       <p class="fo" style="color:#dc2b73;"
+       (click)="openUrl('https://www.instagram.com/0u3a')">      صفحتنا على الأنستكرام  </p>
+      </ion-col>
+      </ion-row>
+
+  </ion-card>
+
+</ion-content>
