@@ -3,6 +3,7 @@ import { IonicPage, NavController , AlertController } from 'ionic-angular';
 import { DatabaseProvider } from '../../providers/database/database';
 //import { ImagePicker } from '@ionic-native/image-picker';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { AboutPage } from '../about/about';
 
 /**
  * Generated class for the CasePage page.
@@ -39,6 +40,7 @@ export class CasePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CasePage');
+    
   }
   addInfo(){   
     //check Image exist
@@ -152,7 +154,9 @@ export class CasePage {
       this.navCtrl.parent.select(0);
     }
       
-
+    goToAbout(){
+      this.navCtrl.push(AboutPage);
+    }
 
 
 }

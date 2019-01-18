@@ -4,6 +4,7 @@ import { DitailsPage } from '../ditails/ditails';
 import{DatabaseProvider} from '../../providers/database/database'
 import { AngularFireDatabase  } from '@angular/fire/database';
 import { IdAuthProvider } from '../../providers/id-auth/id-auth';
+import { AboutPage } from '../about/about';
 
 @Component({
   selector: 'page-home',
@@ -66,7 +67,11 @@ downloadData(){
 
    }
  
-  
+   goToAbout(){
+    this.navCtrl.push(AboutPage);
+
+ }
+
   
  
 }

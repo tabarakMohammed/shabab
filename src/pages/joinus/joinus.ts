@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AboutPage } from '../about/about';
 
 /**
  * Generated class for the JoinusPage page.
@@ -33,6 +34,12 @@ open() {
 }
 */
   openUrl(x : string){
-     window.open(x, '_system'); }
+     window.open(x, '_system');
+     }
 
+     goToAbout(){
+      this.navCtrl.push(AboutPage);
+  
+   }
+  
 }

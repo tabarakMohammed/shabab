@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DatabaseProvider } from '../../providers/database/database';
+import { AboutPage } from '../about/about';
 
 /**
  * Generated class for the HelpPage page.
@@ -65,4 +66,10 @@ export class HelpPage {
   backTOHome(){
     this.navCtrl.parent.select(0);
   }
+
+   goToAbout(){
+    this.navCtrl.push(AboutPage);
+
+ }
+
 }
