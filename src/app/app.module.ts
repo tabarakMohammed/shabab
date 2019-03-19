@@ -39,12 +39,7 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
 
 
 var config = {
-  apiKey: "AIzaSyB3hA7VZaF46I38unRjszWXKVzsClYrXjk",
-  authDomain: "ionic3-da65a.firebaseapp.com",
-  databaseURL: "https://ionic3-da65a.firebaseio.com",
-  projectId: "ionic3-da65a",
-  storageBucket: "ionic3-da65a.appspot.com",
-  messagingSenderId: "692007847742"
+ ///api from firebase
 };
 
 @NgModule({
